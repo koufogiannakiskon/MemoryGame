@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <script src="https://kit.fontawesome.com/20fdb4c944.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./checkbox_styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Inter+Tight&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Memory Game!</h1>
+        <div class="checkbox_div">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+    <section>
+        <script type="text/javascript">
+
+            var clicks = 0;
+            function clickCount() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+        <h3>Click Score: <a id="clicks">0</a></h3>
+        <main>
+            <div class="row">
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+            </div>
+            <div class="row">
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+            </div>
+            <div class="row">
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+            </div>
+            <div class="row">
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event),clickCount()"></div>
+            </div>
+        </main>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="checkbox.js"></script>
+</body>
+
+</html>

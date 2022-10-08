@@ -1,0 +1,115 @@
+h1 {
+    color: #a98467;
+    font-family: 'Inter Tight', sans-serif;
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 80px;
+    top: 20%;
+    left: 25%;
+}
+
+h3 {
+    font-family: 'Alkalami', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: #e78f63c6;
+    transition: background 0.3s linear;
+}
+
+.blur {
+    filter: blur(8px);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 50px 50px 50px 50px;
+    padding: 25px 25px 25px 25px;
+    width: 50%;
+    background-color: #F4F1BB;
+    transition: background 0.3s linear;
+}
+
+div {
+    align-items: center;
+}
+
+.row {
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    flex-direction: row;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(204, 203, 203);
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.turquoise {
+    background-color: turquoise;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.color-hidden {
+    background-color: rgb(204, 203, 203);
+}
+
+.card.done {
+    cursor: default;
+}
+
+.card.done:hover {
+    cursor: default;
+    border: none;
+}
